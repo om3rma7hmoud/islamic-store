@@ -1,0 +1,54 @@
+import ToggleButton from "@mui/material/ToggleButton";
+import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
+
+import { useState } from "react";
+
+export default function CategoryFilter() {
+  const [category, setCategory] = useState("عقيدة");
+
+  const handleCategory = (event, newCategory) => {
+    setCategory(newCategory);
+  };
+  return (
+    <ToggleButtonGroup
+      sx={{
+        direction: "ltr",
+        margin: "20px auto",
+        display: "flex",
+        justifyContent: "center",
+      }}
+      value={category}
+      exclusive
+      onChange={handleCategory}
+      aria-label="text alignment"
+    >
+      <ToggleButton value="تاريخ" aria-label="تاريخ">
+        تاريخ
+      </ToggleButton>
+      <ToggleButton value="سيرة" aria-label="سيرة">
+        سيرة
+      </ToggleButton>
+      <ToggleButton value="علوم الحديث" aria-label="علوم الحديث">
+        علوم الحديث
+      </ToggleButton>
+      <ToggleButton value="حديث" aria-label="حديث">
+        حديث
+      </ToggleButton>
+      <ToggleButton value="علوم القرآن" aria-label="علوم القرآن">
+        علوم القرآن
+      </ToggleButton>
+      <ToggleButton value="تفسير" aria-label="تفسير">
+        تفسير
+      </ToggleButton>
+      <ToggleButton value="فقه" aria-label="فقه">
+        فقه
+      </ToggleButton>
+      <ToggleButton value="أصول الفقه" aria-label="أصول الفقه">
+        أصول الفقه
+      </ToggleButton>
+      <ToggleButton value="عقيدة" aria-label="عقيدة">
+        عقيدة
+      </ToggleButton>
+    </ToggleButtonGroup>
+  );
+}
