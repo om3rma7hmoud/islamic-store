@@ -12,7 +12,7 @@ export default function BookCard({ book }) {
       <CardMedia
         component="img"
         height="500"
-        image={book.image}
+        image={`${import.meta.env.BASE_URL}` + book.image}
         alt="green iguana"
       />
       <CardContent>
