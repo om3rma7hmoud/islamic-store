@@ -4,15 +4,16 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import CardActions from "@mui/material/CardActions";
+import imageUrlTest from "../../public/images/nwaqed.jpg";
 
 export default function BookCard({ book }) {
-  console.log(book.image);
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
         height="500"
-        image={`${import.meta.env.BASE_URL}` + book.image}
+        image={imageUrlTest}
+        // image={`${import.meta.env.BASE_URL}` + book.image}
         alt="green iguana"
       />
       <CardContent>
