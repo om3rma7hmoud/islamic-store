@@ -4,7 +4,7 @@
     "title": "نواقض الإسلام",
     "author": "محمد بن عبد الوهاب",
     "price": 15,
-    "image": "/images/nwaqed.jpg",
+    "image": "public/images/nwaqed.jpg",
     "description": "كتاب يبين أهم عشر مخرجة من الإسلام.",
     "category": "عقيدة"
   },
@@ -13,7 +13,7 @@
     "title": "القواعد الأربع",
     "author": "محمد بن عبد الوهاب",
     "price": 20,
-    "image": "/images/qawaed.jpg",
+    "image": "public/images/qawaed.jpg",
     "description": "أربع قواعد أساسية في التوحيد والشرك.",
     "category": "عقيدة"
   },
@@ -22,7 +22,7 @@
     "title": "الأصول الثلاثة",
     "author": "محمد بن عبد الوهاب",
     "price": 25,
-    "image": "/images/osool.jpg",
+    "image": "public/images/osool.jpg",
     "description": "كتاب يشرح الأصول الثلاثة التي يجب على كل مسلم معرفتها.",
     "category": "عقيدة"
   },
@@ -31,7 +31,7 @@
     "title": "كشف الشبهات",
     "author": "محمد بن عبد الوهاب",
     "price": 22,
-    "image": "/images/shubuhat.jpg",
+    "image": "public/images/shubuhat.jpg",
     "description": "يرد على الشبهات المثارة حول التوحيد.",
     "category": "عقيدة"
   },
@@ -40,7 +40,7 @@
     "title": "كتاب التوحيد",
     "author": "محمد بن عبد الوهاب",
     "price": 30,
-    "image": "/images/tawheed.jpg",
+    "image": "public/images/tawheed.jpg",
     "description": "أعظم كتب الإمام محمد بن عبد الوهاب في بيان التوحيد.",
     "category": "عقيدة"
   },
@@ -49,7 +49,7 @@
     "title": "العقيدة الواسطية",
     "author": "ابن تيمية",
     "price": 28,
-    "image": "/images/wasitiyya.jpg",
+    "image": "public/images/wasitiyya.jpg",
     "description": "رسالة مختصرة في عقيدة أهل السنة والجماعة.",
     "category": "عقيدة"
   },
@@ -58,7 +58,7 @@
     "title": "العقيدة الطحاوية",
     "author": "الطحاوي",
     "price": 26,
-    "image": "/images/tahawiyya.jpg",
+    "image": "public/images/tahawiyya.jpg",
     "description": "متن مشهور في بيان عقيدة أهل السنة والجماعة.",
     "category": "عقيدة"
   },
@@ -67,7 +67,7 @@
     "title": "شرح لمعة الاعتقاد",
     "author": "ابن قدامة",
     "price": 24,
-    "image": "/images/lumah.jpg",
+    "image": "public/images/lumah.jpg",
     "description": "شرح مختصر لعقيدة أهل السنة.",
     "category": "عقيدة"
   },
@@ -76,7 +76,7 @@
     "title": "الإبانة عن أصول الديانة",
     "author": "الأشعري",
     "price": 27,
-    "image": "/images/ibana.jpg",
+    "image": "public/images/ibana.jpg",
     "description": "من أهم كتب العقيدة في القرون الأولى.",
     "category": "عقيدة"
   },
@@ -85,7 +85,7 @@
     "title": "تفسير ابن كثير",
     "author": "ابن كثير",
     "price": 90,
-    "image": "/images/ibnkathir.jpg",
+    "image": "public/images/ibnkathir.jpg",
     "description": "من أعظم كتب التفسير بالمأثور.",
     "category": "تفسير"
   },
@@ -94,7 +94,7 @@
     "title": "تفسير الطبري",
     "author": "الطبري",
     "price": 120,
-    "image": "/images/tabari.jpg",
+    "image": "public/images/tabari.jpg",
     "description": "جامع البيان عن تأويل آي القرآن.",
     "category": "تفسير"
   },
@@ -103,7 +103,7 @@
     "title": "تفسير القرطبي",
     "author": "القرطبي",
     "price": 100,
-    "image": "/images/qurtubi.jpg",
+    "image": "public/images/qurtubi.jpg",
     "description": "الجامع لأحكام القرآن.",
     "category": "تفسير"
   },
@@ -112,7 +112,7 @@
     "title": "التحرير والتنوير",
     "author": "ابن عاشور",
     "price": 95,
-    "image": "/images/tahrir.jpg",
+    "image": "public/images/tahrir.jpg",
     "description": "من أوسع كتب التفسير في العصر الحديث.",
     "category": "تفسير"
   },
@@ -121,7 +121,7 @@
     "title": "أحكام القرآن",
     "author": "الجصاص",
     "price": 80,
-    "image": "/images/ahkam.jpg",
+    "image": "public/images/ahkam.jpg",
     "description": "يشرح آيات الأحكام بتفصيل فقهي.",
     "category": "تفسير"
   },
@@ -131,14 +131,14 @@
     "author": "سليمان الجمزوري",
     "category": "علوم قرآن",
     "price": 15,
-    "image": "/images/books/tuhfa.jpg"
+    "image": "public/images/books/tuhfa.jpg"
   },
   {
     "id": 16,
     "title": "الإتقان في علوم القرآن",
     "author": "السيوطي",
     "price": 75,
-    "image": "/images/itqan.jpg",
+    "image": "public/images/itqan.jpg",
     "description": "مرجع شامل في علوم القرآن.",
     "category": "علوم القرآن"
   },
@@ -147,7 +147,7 @@
     "title": "البرهان في علوم القرآن",
     "author": "الزركشي",
     "price": 70,
-    "image": "/images/burhan.jpg",
+    "image": "public/images/burhan.jpg",
     "description": "كتاب أصيل في علوم القرآن.",
     "category": "علوم القرآن"
   },
@@ -156,7 +156,7 @@
     "title": "مباحث في علوم القرآن",
     "author": "مناع القطان",
     "price": 65,
-    "image": "/images/qattan.jpg",
+    "image": "public/images/qattan.jpg",
     "description": "كتاب تعليمي في علوم القرآن.",
     "category": "علوم القرآن"
   },
@@ -165,7 +165,7 @@
     "title": "التبيان في آداب حملة القرآن",
     "author": "النووي",
     "price": 60,
-    "image": "/images/tabyan.jpg",
+    "image": "public/images/tabyan.jpg",
     "description": "كتاب في آداب تلاوة القرآن وتعليمه.",
     "category": "علوم القرآن"
   },
@@ -174,7 +174,7 @@
     "title": "صحيح البخاري",
     "author": "البخاري",
     "price": 150,
-    "image": "/images/bukhari.jpg",
+    "image": "public/images/bukhari.jpg",
     "description": "أصح كتاب بعد كتاب الله.",
     "category": "حديث"
   },
@@ -183,7 +183,7 @@
     "title": "صحيح مسلم",
     "author": "مسلم",
     "price": 140,
-    "image": "/images/muslim.jpg",
+    "image": "public/images/muslim.jpg",
     "description": "ثاني أصح كتب الحديث.",
     "category": "حديث"
   },
@@ -192,7 +192,7 @@
     "title": "سنن أبي داود",
     "author": "أبو داود",
     "price": 90,
-    "image": "/images/abudawud.jpg",
+    "image": "public/images/abudawud.jpg",
     "description": "من كتب السنن الأربعة.",
     "category": "حديث"
   },
@@ -201,7 +201,7 @@
     "title": "سنن الترمذي",
     "author": "الترمذي",
     "price": 85,
-    "image": "/images/tirmidhi.jpg",
+    "image": "public/images/tirmidhi.jpg",
     "description": "من السنن المعروفة عند أهل الحديث.",
     "category": "حديث"
   },
@@ -210,7 +210,7 @@
     "title": "سنن النسائي",
     "author": "النسائي",
     "price": 88,
-    "image": "/images/nesai.jpg",
+    "image": "public/images/nesai.jpg",
     "description": "من كتب السنن الستة.",
     "category": "حديث"
   },
@@ -219,7 +219,7 @@
     "title": "سنن ابن ماجه",
     "author": "ابن ماجه",
     "price": 80,
-    "image": "/images/ibnmaja.jpg",
+    "image": "public/images/ibnmaja.jpg",
     "description": "آخر كتب السنن الستة.",
     "category": "حديث"
   },
@@ -228,7 +228,7 @@
     "title": "موطأ مالك",
     "author": "مالك بن أنس",
     "price": 95,
-    "image": "/images/muwatta.jpg",
+    "image": "public/images/muwatta.jpg",
     "description": "من أقدم كتب الحديث.",
     "category": "حديث"
   },
@@ -237,7 +237,7 @@
     "title": "رياض الصالحين",
     "author": "النووي",
     "price": 70,
-    "image": "/images/riyad.jpg",
+    "image": "public/images/riyad.jpg",
     "description": "مجموعة من الأحاديث في الترغيب والترهيب.",
     "category": "حديث"
   },
@@ -246,7 +246,7 @@
     "title": "الأربعون النووية",
     "author": "النووي",
     "price": 40,
-    "image": "/images/40nawawi.jpg",
+    "image": "public/images/40nawawi.jpg",
     "description": "مجموعة مختارة من الأحاديث النبوية.",
     "category": "حديث"
   },
@@ -255,7 +255,7 @@
     "title": "عمدة الأحكام",
     "author": "عبد الغني المقدسي",
     "price": 55,
-    "image": "/images/omdat.jpg",
+    "image": "public/images/omdat.jpg",
     "description": "أحاديث الأحكام من الصحيحين.",
     "category": "حديث"
   },
@@ -264,7 +264,7 @@
     "title": "نخبة الفكر",
     "author": "ابن حجر",
     "price": 35,
-    "image": "/images/nokhba.jpg",
+    "image": "public/images/nokhba.jpg",
     "description": "متن في مصطلح الحديث.",
     "category": "علوم الحديث"
   },
@@ -273,7 +273,7 @@
     "title": "تدريب الراوي",
     "author": "السيوطي",
     "price": 60,
-    "image": "/images/tadreeb.jpg",
+    "image": "public/images/tadreeb.jpg",
     "description": "شرح لنخبة الفكر في مصطلح الحديث.",
     "category": "علوم الحديث"
   },
@@ -282,7 +282,7 @@
     "title": "سيرة ابن هشام",
     "author": "ابن هشام",
     "price": 65,
-    "image": "/images/ibnhisham.jpg",
+    "image": "public/images/ibnhisham.jpg",
     "description": "أشهر كتب السيرة النبوية.",
     "category": "سيرة"
   },
@@ -291,7 +291,7 @@
     "title": "الرحيق المختوم",
     "author": "المباركفوري",
     "price": 50,
-    "image": "/images/raheeq.jpg",
+    "image": "public/images/raheeq.jpg",
     "description": "سيرة نبوية معاصرة.",
     "category": "سيرة"
   },
@@ -300,7 +300,7 @@
     "title": "زاد المعاد",
     "author": "ابن القيم",
     "price": 90,
-    "image": "/images/zaad.jpg",
+    "image": "public/images/zaad.jpg",
     "description": "في هدي خير العباد.",
     "category": "سيرة"
   },
@@ -309,7 +309,7 @@
     "title": "البداية والنهاية",
     "author": "ابن كثير",
     "price": 130,
-    "image": "/images/bidaya.jpg",
+    "image": "public/images/bidaya.jpg",
     "description": "أشهر كتب التاريخ الإسلامي.",
     "category": "تاريخ"
   },
@@ -318,7 +318,7 @@
     "title": "المغني",
     "author": "ابن قدامة",
     "price": 140,
-    "image": "/images/mughni.jpg",
+    "image": "public/images/mughni.jpg",
     "description": "من أعظم كتب الفقه المقارن.",
     "category": "فقه"
   },
@@ -327,7 +327,7 @@
     "title": "الأم",
     "author": "الشافعي",
     "price": 120,
-    "image": "/images/um.jpg",
+    "image": "public/images/um.jpg",
     "description": "أصل من أصول الفقه الشافعي.",
     "category": "فقه"
   },
@@ -336,7 +336,7 @@
     "title": "بدائع الصنائع",
     "author": "الكاساني",
     "price": 110,
-    "image": "/images/badae.jpg",
+    "image": "public/images/badae.jpg",
     "description": "كتاب فقهي حنفي.",
     "category": "فقه"
   },
@@ -345,7 +345,7 @@
     "title": "المجموع",
     "author": "النووي",
     "price": 115,
-    "image": "/images/majmou.jpg",
+    "image": "public/images/majmou.jpg",
     "description": "شرح المهذب في الفقه الشافعي.",
     "category": "فقه"
   },
@@ -354,7 +354,7 @@
     "title": "المحلى",
     "author": "ابن حزم",
     "price": 125,
-    "image": "/images/mohalla.jpg",
+    "image": "public/images/mohalla.jpg",
     "description": "فقه مقارن على مذهب الظاهرية.",
     "category": "فقه"
   },
@@ -363,7 +363,7 @@
     "title": "الكافي",
     "author": "ابن عبد البر",
     "price": 100,
-    "image": "/images/kafi.jpg",
+    "image": "public/images/kafi.jpg",
     "description": "من كتب الفقه المالكي.",
     "category": "فقه"
   },
@@ -372,7 +372,7 @@
     "title": "إعلام الموقعين",
     "author": "ابن القيم",
     "price": 95,
-    "image": "/images/ialam.jpg",
+    "image": "public/images/ialam.jpg",
     "description": "عن رب العالمين في الفقه وأصوله.",
     "category": "فقه"
   },
@@ -381,7 +381,7 @@
     "title": "الرسالة",
     "author": "الشافعي",
     "price": 85,
-    "image": "/images/risala.jpg",
+    "image": "public/images/risala.jpg",
     "description": "أول مؤلف في أصول الفقه.",
     "category": "أصول الفقه"
   }
