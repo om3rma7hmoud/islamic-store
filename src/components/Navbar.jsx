@@ -11,7 +11,7 @@ import "../styles/navbar.css";
 export default function Navbar() {
   return (
     <AppBar position="sticky" color="primary">
-      <Container>
+      <Container fixed>
         <Toolbar>
           <Typography
             className="nav-logo"

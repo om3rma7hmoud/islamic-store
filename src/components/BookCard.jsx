@@ -4,7 +4,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import CardActions from "@mui/material/CardActions";
-import imageUrlTest from "../../public/images/nwaqed.jpg";
+import imageUrlTest from "/images/nwaqed.jpg";
 
 export default function BookCard({ book }) {
   return (

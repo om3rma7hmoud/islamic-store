@@ -6,11 +6,18 @@ import Grid from "@mui/material/Grid";
 
 export default function BooksSection() {
   return (
-    <Container>
+    <Container fixed>
       <CategoryFilter />
-      <Grid container gap={3} justifyContent="center" alignItems={"stretch"}>
+      <Grid
+        container
+        // spacing={3}
+        gap={3}
+        justifyContent="center"
+        // alignItems={"stretch"}
+        // columns={{ xs: 12, sm: 8, md: 12 }}
+      >
         {BooksData.map((book) => (
-          <Grid item key={book.id} xs={12} sm={6} md={4}>
+          <Grid item key={book.id} xs={12} sm={6} md={4} lg={3}>
             <BookCard book={book} />
           </Grid>
         ))}
