@@ -6,9 +6,11 @@ import Button from "@mui/material/Button";
 import CardActions from "@mui/material/CardActions";
 import imageUrlTest from "/images/nwaqed.jpg";
 
+import "../styles/book-card.css";
+
 export default function BookCard({ book }) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card className="book-card" sx={{ maxWidth: 345, boxShadow: "0" }}>
       <CardMedia
         component="img"
         height="500"

@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <AppBar position="sticky" color="primary">
       <Container fixed>
-        <Toolbar>
+        <Toolbar style={{ padding: "0" }}>
           <Typography
             className="nav-logo"
             variant="h4"

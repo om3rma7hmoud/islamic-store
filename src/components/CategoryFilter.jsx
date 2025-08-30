@@ -3,11 +3,14 @@ import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 
 import { useState } from "react";
 
-export default function CategoryFilter() {
-  const [category, setCategory] = useState("عقيدة");
+export default function CategoryFilter({ changeFilter }) {
+  const [category, setCategory] = useState("الكل");
 
   const handleCategory = (event, newCategory) => {
-    setCategory(newCategory);
+    if (newCategory !== null) {
+      setCategory(newCategory);
+      changeFilter(newCategory);
+    }
   };
   return (
     <ToggleButtonGroup
@@ -48,6 +51,9 @@ export default function CategoryFilter() {
       </ToggleButton>
       <ToggleButton value="عقيدة" aria-label="عقيدة">
         عقيدة
+      </ToggleButton>
+      <ToggleButton value="الكل" aria-label="الكل">
+        الكل
       </ToggleButton>
     </ToggleButtonGroup>
   );

@@ -4,7 +4,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="app" style={{ height: "1000vh" }}>
+    <div className="app">
       <Home />
     </div>
   );
