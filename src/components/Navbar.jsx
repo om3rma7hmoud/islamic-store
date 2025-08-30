@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <AppBar position="sticky" color="primary">
       <Container fixed>
-        <Toolbar style={{ padding: "0" }}>
+        <Toolbar>
           <Typography
             className="nav-logo"
             variant="h4"
@@ -29,7 +29,12 @@ export default function Navbar() {
             aria-label="show 17 new shoppingcart"
             color="inherit"
           >
-            <Badge badgeContent={1} color="error">
+            <Badge
+              badgeContent={1}
+              className="fhhhhhhhhhhhhhhhh"
+              style={{ padding: "0 !important" }}
+              color="error"
+            >
               <Link style={{ color: "white" }} to={"/link"}>
                 <ShoppingCartIcon />
               </Link>

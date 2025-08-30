@@ -23,16 +23,24 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function BooksSection() {
+  /* Search Type */
+  const [searchType, setSearchType] = useState("عنوان الكتاب");
+  const [searchText, setSearchText] = useState("");
+  /*=== Search Type ===*/
+
   /* Filter Books */
   const [selectedCategory, setSelectedCategory] = useState("الكل");
-  let filteredBooks = BooksData.filter(
-    (book) => selectedCategory === "الكل" || book.category === selectedCategory
-  );
-  /*=== Filter Books ===*/
+  let filteredBooks = BooksData.filter((book) => {
+    const matchCategory =
+      selectedCategory === "الكل" || book.category === selectedCategory;
 
-  /* Search Type */
-  const [age, setAge] = useState("عنوان الكتاب");
-  /*=== Search Type ===*/
+    const matchSearch =
+      searchType === "عنوان الكتاب"
+        ? book.title.includes(searchText)
+        : book.author.includes(searchText);
+    return matchCategory && matchSearch;
+  });
+  /*=== Filter Books ===*/
 
   return (
     <Container fixed>
@@ -45,8 +53,10 @@ export default function BooksSection() {
           <TextField
             style={{ width: "100%" }}
             id="outlined-basic"
-            label={age}
+            label={searchType}
             variant="outlined"
+            value={searchText}
+            onChange={(e) => setSearchText(e.target.value)}
           />
         </Grid>
         <Grid size={4}>
@@ -54,10 +64,8 @@ export default function BooksSection() {
             <Select
               labelId="demo-simple-select-label"
               id="demo-simple-select"
-              value={age}
-              onChange={(e) => {
-                setAge(e.target.value);
-              }}
+              value={searchType}
+              onChange={(e) => setSearchType(e.target.value)}
             >
               <MenuItem value={"عنوان الكتاب"}>عنوان الكتاب</MenuItem>
               <MenuItem value={"مؤلف الكتاب"}>مؤلف الكتاب</MenuItem>
@@ -67,7 +75,7 @@ export default function BooksSection() {
       </Grid>
       {/*=== Search a Book ===*/}
       {/* Books Grid */}
-      <Grid container gap={3} justifyContent="center">
+      <Grid container gap={3} className="books-grid">
         {filteredBooks.map((book) => (
           <Grid
             // item

@@ -26,7 +26,7 @@ export default function BookCard({ book }) {
           {book.description}
         </Typography>
       </CardContent>
-      <CardActions>
+      <CardActions className="add-button">
         <Button variant="contained" color="primary">
           أضف إلى السلة
         </Button>
