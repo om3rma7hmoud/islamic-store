@@ -4,6 +4,8 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import CardActions from "@mui/material/CardActions";
+import { Link } from "react-router-dom";
+
 import imageUrlTest from "/images/nwaqed.jpg";
 
 import "../styles/book-card.css";
@@ -26,7 +28,12 @@ export default function BookCard({ book }) {
           {book.description}
         </Typography>
       </CardContent>
-      <CardActions className="add-button">
+      <CardActions style={{ gap: "10px" }} className="add-button">
+        <Link to={"/BookDetails"}>
+          <Button variant="contained" color="secondary">
+            التفاصيل
+          </Button>
+        </Link>
         <Button variant="contained" color="primary">
           أضف إلى السلة
         </Button>

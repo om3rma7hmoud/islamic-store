@@ -29,12 +29,7 @@ export default function Navbar() {
             aria-label="show 17 new shoppingcart"
             color="inherit"
           >
-            <Badge
-              badgeContent={1}
-              className="fhhhhhhhhhhhhhhhh"
-              style={{ padding: "0 !important" }}
-              color="error"
-            >
+            <Badge badgeContent={1} color="error">
               <Link style={{ color: "white" }} to={"/link"}>
                 <ShoppingCartIcon />
               </Link>
