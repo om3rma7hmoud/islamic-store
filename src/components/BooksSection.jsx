@@ -41,7 +41,6 @@ export default function BooksSection() {
     return matchCategory && matchSearch;
   });
   /*=== Filter Books ===*/
-
   return (
     <Container fixed>
       {/* Filter Books */}
@@ -77,13 +76,7 @@ export default function BooksSection() {
       {/* Books Grid */}
       <Grid container gap={3} className="books-grid">
         {filteredBooks.map((book) => (
-          <Grid
-            // item
-            key={book.id}
-            xs={12}
-            sm={6}
-            md={4}
-          >
+          <Grid key={book.id} xs={12} sm={6} md={4}>
             <Item className="book-item">
               <BookCard book={book} />
             </Item>

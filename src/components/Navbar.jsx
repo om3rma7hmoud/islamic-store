@@ -19,7 +19,10 @@ export default function Navbar() {
             component="div"
             sx={{ flexGrow: 1 }}
           >
-            <Link style={{ color: "white", textDecoration: "none" }} to="/">
+            <Link
+              style={{ color: "white", textDecoration: "none" }}
+              to="/islamic-store"
+            >
               مكتبة تراث
             </Link>
           </Typography>
