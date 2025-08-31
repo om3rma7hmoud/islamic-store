@@ -27,9 +27,6 @@ export default function BookCard({ book }) {
         <Typography variant="body" sx={{ color: "text.secondary" }}>
           {book.description}
         </Typography>
-        <Typography variant="body" sx={{ color: "text.secondary" }}>
-          السعر: {book.price}
-        </Typography>
       </CardContent>
       <CardActions style={{ gap: "10px" }} className="add-button">
         <Link to={`/islamic-store/BookDetails/${book.id}`}>
