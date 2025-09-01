@@ -54,9 +54,9 @@
   color: #333;
 }
 
-.add-to-cart {
+.add-to-cart,
+.remove-from-cart {
   margin-top: 20px;
-  background: #007bff;
   color: white;
   padding: 15px 25px;
   border: none;
@@ -68,8 +68,8 @@
   width: fit-content;
 }
 
-.add-to-cart:hover {
-  background: #0056b3;
+.add-to-cart:hover,
+.remove-from-cart:hover {
   transform: scale(1.05);
 }
 
@@ -86,7 +86,8 @@
     margin: auto;
   }
 
-  .add-to-cart {
+  .add-to-cart,
+  .remove-from-cart {
     width: 100%;
   }
 }

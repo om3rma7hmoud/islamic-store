@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/islamic-store" element={<Home />} />
         <Route
-          path="/islamic-store/BookDetails/:bookId"
+          path="/islamic-store/BookDetails/:id"
           element={<BookDetails />}
         />
       </Routes>
