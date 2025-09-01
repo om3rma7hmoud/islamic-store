@@ -4,6 +4,7 @@ import BookDetails from "./pages/BookDetails";
 import { Route, Routes } from "react-router-dom";
 
 import "./App.css";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           path="/islamic-store/BookDetails/:id"
           element={<BookDetails />}
         />
+        <Route path="/islamic-store/Cart" element={<Cart />} />
       </Routes>
     </div>
   );

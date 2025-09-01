@@ -9,31 +9,19 @@ import { useParams } from "react-router-dom";
 
 /* Style */
 import "../styles/BookDetails.css";
-import { useEffect, useState } from "react";
 
 /* Others */
-import { addToCart, removeFromCart, isInCart } from "../utils/cart";
+// import { addToCart, removeFromCart, isInCart } from "../utils/cart";
+import { useCart } from "../context/CartContext";
 
 export default function BookDetails() {
   const { id } = useParams();
   const book = booksData.find((book) => {
     return book.id === parseInt(id);
   });
-  const [inCart, setInCart] = useState(false);
 
-  useEffect(() => {
-    setInCart(isInCart(book.id));
-  }, [book]);
-
-  const handleAdd = () => {
-    addToCart(book);
-    setInCart(true);
-  };
-
-  const handleRemove = () => {
-    removeFromCart(book.id);
-    setInCart(false);
-  };
+  const { dispatch, cart } = useCart();
+  const inCart = cart.find((item) => item.id === book.id);
   return (
     <Container>
       <div className="book-page">
@@ -57,7 +45,7 @@ export default function BookDetails() {
                 className="add-to-cart"
                 variant="contained"
                 color="primary"
-                onClick={handleAdd}
+                onClick={() => dispatch({ type: "ADD", book })}
               >
                 أضف إلى السلة
               </Button>
@@ -66,7 +54,7 @@ export default function BookDetails() {
                 className="remove-from-cart"
                 variant="contained"
                 color="error"
-                onClick={handleRemove}
+                onClick={() => dispatch({ type: "REMOVE", id: book.id })}
               >
                 إزالة من السلة
               </Button>

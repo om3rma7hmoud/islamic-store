@@ -6,9 +6,15 @@ import IconButton from "@mui/material/IconButton";
 import Badge from "@mui/material/Badge";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { Link } from "react-router-dom";
+
 import "../styles/navbar.css";
+import { useCart } from "../context/CartContext";
 
 export default function Navbar() {
+  const { cart } = useCart();
+  const quantity = cart.reduce((sum, item) => sum + item.quantity, 0);
+  const totalQuantity = quantity !== 0 ? quantity : "0";
+
   return (
     <AppBar position="sticky" color="primary">
       <Container fixed>
@@ -21,23 +27,23 @@ export default function Navbar() {
           >
             <Link
               style={{ color: "white", textDecoration: "none" }}
-              to="/islamic-store"
+              to="/islamic-store/"
             >
               مكتبة تراث
             </Link>
           </Typography>
-          <IconButton
-            className="nav-link"
-            size="large"
-            aria-label="show 17 new shoppingcart"
-            color="inherit"
-          >
-            <Badge badgeContent={1} color="error">
-              <Link style={{ color: "white" }} to={"/link"}>
+          <Link style={{ color: "white" }} to={"/islamic-store/Cart"}>
+            <IconButton
+              className="nav-link"
+              size="large"
+              aria-label="show 17 new shoppingcart"
+              color="inherit"
+            >
+              <Badge badgeContent={totalQuantity} color="error">
                 <ShoppingCartIcon />
-              </Link>
-            </Badge>
-          </IconButton>
+              </Badge>
+            </IconButton>
+          </Link>
         </Toolbar>
       </Container>
     </AppBar>
