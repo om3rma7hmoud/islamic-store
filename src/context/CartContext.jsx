@@ -45,11 +45,14 @@ function cartReducer(state, action) {
 
     /* Decrease Book */
     case "DECREASE": {
-      updatedCart = state.map((item) =>
-        item.id === action.id && item.quantity > 1
-          ? { ...item, quantity: item.quantity - 1 }
-          : item
-      );
+      updatedCart = state
+        .map((item) =>
+          item.id === action.id && item.quantity > 0
+            ? { ...item, quantity: item.quantity - 1 }
+            : item
+        )
+        // T amount of the books become zero ? remove it
+        .filter((item) => item.quantity > 0);
       localStorage.setItem("cart", JSON.stringify(updatedCart));
       return updatedCart;
     }
