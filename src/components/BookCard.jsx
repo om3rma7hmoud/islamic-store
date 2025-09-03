@@ -13,10 +13,23 @@ import imageUrlTest from "/images/nwaqed.jpg";
 /* STYLE */
 import "../styles/book-card.css";
 import { useCart } from "../context/CartContext";
+import { useSnackbar } from "../context/SnackbarContext";
 
 export default function BookCard({ book }) {
   const { dispatch, cart } = useCart();
+  const { showHideSnackbar } = useSnackbar();
   const inCart = cart.some((item) => item.id === book.id);
+
+  function handleAdd() {
+    showHideSnackbar("تم إضافة الكتاب إلى سلة المشتريات");
+    dispatch({ type: "ADD", book });
+  }
+
+  function handleRemove() {
+    showHideSnackbar("تم إزالة الكتاب من سلة المشتريات");
+    dispatch({ type: "REMOVE", id: book.id });
+  }
+
   return (
     <Card className="book-card" sx={{ maxWidth: 345, boxShadow: "0" }}>
       <CardMedia
@@ -36,24 +49,16 @@ export default function BookCard({ book }) {
       </CardContent>
       <CardActions style={{ gap: "10px" }} className="add-button">
         <Link to={`/islamic-store/BookDetails/${book.id}`}>
-          <Button variant="contained" color="secondary">
+          <Button variant="contained" color="primary">
             التفاصيل
           </Button>
         </Link>
         {!inCart ? (
-          <Button
-            variant="contained"
-            color="primary"
-            onClick={() => dispatch({ type: "ADD", book })}
-          >
+          <Button variant="contained" color="primary" onClick={handleAdd}>
             أضف إلى السلة
           </Button>
         ) : (
-          <Button
-            variant="contained"
-            color="error"
-            onClick={() => dispatch({ type: "REMOVE", id: book.id })}
-          >
+          <Button variant="contained" color="error" onClick={handleRemove}>
             إزالة من السلة
           </Button>
         )}

@@ -13,6 +13,7 @@ export default function Cart() {
         <div key={item.id}>
           <h4>{item.title}</h4>
           <p>الكمية: {item.quantity}</p>
+          <p>السعر: {item.quantity * item.price} </p>
           <button onClick={() => dispatch({ type: "INCREASE", id: item.id })}>
             ➕
           </button>
