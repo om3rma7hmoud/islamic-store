@@ -24,7 +24,6 @@ export const SnackbarProvider = ({ children }) => {
         message={message}
         sx={{
           "& .MuiSnackbarContent-root": { backgroundColor: "primary.main" },
-          fontSize: "18px",
         }}
       />
       {children}
