@@ -24,6 +24,7 @@ export default function CategoryFilter({ changeFilter }) {
       exclusive
       onChange={handleCategory}
       aria-label="text alignment"
+      color="primary"
     >
       <ToggleButton value="تاريخ" aria-label="تاريخ">
         تاريخ

@@ -1,12 +1,17 @@
 @media (max-width: 899px) {
   .added-book-card {
     flex-direction: column-reverse;
-    /* width: 100%; */
   }
   .added-book-card .amount-action {
     justify-content: center;
   }
   .added-book-card img {
     width: 100%;
+  }
+}
+
+@media (min-width: 900px) {
+  .added-book-card {
+    height: 320px;
   }
 }

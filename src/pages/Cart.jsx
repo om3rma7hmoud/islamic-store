@@ -13,10 +13,10 @@ export default function MediaControlCard() {
   return (
     <Container fixed style={{ marginTop: "25px" }}>
       {/* Books Grid */}
-      <Grid container gap={3} justifyContent="center" className="books-grid">
+      <Grid container gap={5} justifyContent="center" className="books-grid">
         {/* Book */}
         {cart.map((book) => (
-          <Grid key={book.id}>
+          <Grid key={book.id} xs={12} sm={8} md={6} lg={4}>
             <AddedBookCard book={book} />
           </Grid>
         ))}

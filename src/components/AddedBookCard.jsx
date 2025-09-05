@@ -18,7 +18,7 @@ export default function AddedBookCard({ book }) {
     <Card
       sx={{
         display: "flex",
-        maxWidth: 410,
+        width: 480,
         borderRadius: 3,
         boxShadow: 4,
         transition: "0.3s",
