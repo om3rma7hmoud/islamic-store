@@ -96,9 +96,12 @@ export default function AddedBookCard({ book }) {
               {book.quantity}
             </Typography>
             {/*=== Amount ===*/}
-            <IconButton aria-label="next" color="primary">
+            <IconButton
+              onClick={() => dispatch({ type: "DECREASE", id: book.id })}
+              aria-label="next"
+              color="primary"
+            >
               <RemoveOutlinedIcon
-                onClick={() => dispatch({ type: "DECREASE", id: book.id })}
                 fontSize="large"
                 style={{ border: "1px solid" }}
               />
