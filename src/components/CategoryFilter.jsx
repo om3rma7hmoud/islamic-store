@@ -18,7 +18,9 @@ export default function CategoryFilter({ changeFilter }) {
         direction: "ltr",
         margin: "20px auto",
         display: "flex",
+        flexWrap: "wrap-reverse",
         justifyContent: "center",
+        rowGap: "20px",
       }}
       value={category}
       exclusive
@@ -44,7 +46,11 @@ export default function CategoryFilter({ changeFilter }) {
       <ToggleButton value="تفسير" aria-label="تفسير">
         تفسير
       </ToggleButton>
-      <ToggleButton value="فقه" aria-label="فقه">
+      <ToggleButton
+        sx={{ borderLeft: "1px solid rgba(0, 0, 0, 0.12) !important" }}
+        value="فقه"
+        aria-label="فقه"
+      >
         فقه
       </ToggleButton>
       <ToggleButton value="أصول الفقه" aria-label="أصول الفقه">
